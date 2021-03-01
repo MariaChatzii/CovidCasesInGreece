@@ -11,7 +11,7 @@ Information for each area:
  
  ● Today's number of cases compared to the previous day's number of cases. 
  
- REQUIREMENTS
- Get API key from https://data.gov.gr/token
+ 
+ *Requires API key from https://data.gov.gr/token
 
 
