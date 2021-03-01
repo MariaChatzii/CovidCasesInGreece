@@ -10,5 +10,8 @@ Information for each area:
  ● Today's number COVID-19 cases.
  
  ● Today's number of cases compared to the previous day's number of cases. 
+ 
+ REQUIREMENTS
+ Get API key from https://data.gov.gr/token
 
 
