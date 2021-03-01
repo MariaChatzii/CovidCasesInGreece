@@ -9,6 +9,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    private final static String REMOTE_URL =  "https://data.gov.gr/api/v1/query/mdg_emvolio?date_from=2021-01-21&date_to=2021-01-31";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
                         new ArrayList<>(),
                         recordsListView
                 );
+
+        GetDataTask getDataTaskObj = new GetDataTask(recordsArrayAdapter);
+        getDataTaskObj.execute(REMOTE_URL);
     }
 
 
