@@ -25,7 +25,6 @@ public class GetDataTask extends AsyncTask<String, Void, List<AreaRecord>> {
         StringBuilder sb = new StringBuilder();
 
         try{
-
             URL url = new URL(remoteUrl);
             HttpURLConnection connection = (HttpURLConnection)url.openConnection();
             connection.setRequestProperty ("Authorization", "Token " +BuildConfig.CovidApiKey);
@@ -64,7 +63,9 @@ public class GetDataTask extends AsyncTask<String, Void, List<AreaRecord>> {
         Log.d(TAG, "Doing task in background for url "+url);
 
         String recordsJson = downloadRestData(url);
-        return null;
+
+        JsonParser jsonParser = new JsonParser();
+        return jsonParser.parsePostData(recordsJson);
     }
 
     @Override
