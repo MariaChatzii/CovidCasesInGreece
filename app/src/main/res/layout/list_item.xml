@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dayTotalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Σήμερα"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/areaTextView"
+        app:layout_constraintTop_toBottomOf="@+id/areaTextView" />
+
+    <TextView
+        android:id="@+id/daydiffTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Διαφορά"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/dayTotalTextView"
+        app:layout_constraintTop_toTopOf="@+id/dayTotalTextView" />
+
+    <TextView
+        android:id="@+id/totalVaccinationsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="ΣΥΝΟΛΟ"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toEndOf="@+id/daydiffTextView"
+        app:layout_constraintTop_toTopOf="@+id/daydiffTextView" />
+
+    <TextView
+        android:id="@+id/areaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dayTotalCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/dayTotalTextView"
+        app:layout_constraintTop_toBottomOf="@+id/dayTotalTextView" />
+
+    <TextView
+        android:id="@+id/daydiffCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/daydiffTextView"
+        app:layout_constraintStart_toStartOf="@+id/daydiffTextView"
+        app:layout_constraintTop_toBottomOf="@+id/daydiffTextView" />
+
+    <TextView
+        android:id="@+id/totalVaccinationsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/totalVaccinationsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/totalVaccinationsTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
